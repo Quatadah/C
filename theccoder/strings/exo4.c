@@ -11,7 +11,6 @@ void toUpper(char *str)
             *str = *str -'a'+ 'A';
         str ++;
     }
-    //return str;
 }
 
 int main(int argc, char *argv[])
