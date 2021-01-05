@@ -2,12 +2,12 @@
 #include <stdlib.h>
 #define MAX_STR 30
 
-typedef struct Etudiant{
+typedef struct Student{
     char fullName[MAX_STR];
     double score;
-}Etudiant;
+}Student;
 
-void updateScore(Etudiant class[],int len)
+void updateScore(Student class[],int len)
 {
     for(int i = 0; i<len;i++)
     {
@@ -18,7 +18,7 @@ void updateScore(Etudiant class[],int len)
     }
 }
 
-void scanClass(Etudiant class[], int len)
+void scanClass(Student class[], int len)
 {
     for(int i = 0;i <len ;i++)
     {
@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
     printf("Enter number of students : ");
     scanf("%d",&len);
 
-    Etudiant class[len];
+    Student class[len];
     scanClass(class,len);
 
 }
